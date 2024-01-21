@@ -20,7 +20,7 @@ const getSingle = async(req, res) => {
     }
     const userId = new ObjectId(req.params.id);
     const result = await mongodb.getDatabase().db().collection('people').find({_id: userId});
-    result.toArray.then((err, result) => {
+    result.toArray().then((err, result) => {
         if (err) {
             res.status(400).json({ message: err });
         }
