@@ -5,7 +5,7 @@
     "description": "People Api",
     "version": "1.0.0"
   },
-  "host": "localhost:3040",
+  "host": "https://cse-341-week3-project.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",
