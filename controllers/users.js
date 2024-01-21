@@ -23,9 +23,10 @@ const getSingle = async(req, res) => {
     result.toArray().then((err, result) => {
         if (err) {
             res.status(400).json({ message: err });
-        }
+        } else {
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(result[0]);
+        }
     });
 };
 
